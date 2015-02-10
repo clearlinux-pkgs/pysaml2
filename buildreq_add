@@ -1,0 +1,32 @@
+# This file contains additional build requirements that did not get
+# picked up automatically. One name per line, no whitespace.
+python-dateutil-python
+pyOpenSSL-python
+pytz-python
+pycrypto-python
+repoze.who-python
+zope.interface-python
+paste-python
+requests-python
+decorator-python
+six-python
+six
+cryptography
+WebOb-python
+cffi-python
+cffi
+ipaddress-python
+enum34-python
+pyasn1-python
+idna-python
+pycparser-python
+pycparser
+Mako
+pytest-python
+python-memcached
+mongodict
+pymongo-python
+MarkupSafe-python
+py-python
+xmlsec1
+xmlsec1-dev

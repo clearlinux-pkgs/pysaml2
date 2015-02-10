@@ -1,0 +1,31 @@
+Index: pysaml2-2.4.0/setup.py
+===================================================================
+--- pysaml2-2.4.0.orig/setup.py	2015-03-11 09:07:49.000000000 +0000
++++ pysaml2-2.4.0/setup.py	2015-04-01 15:45:50.017448667 +0100
+@@ -31,7 +31,6 @@
+     'pytz',
+     'pyOpenSSL',
+     'python-dateutil',
+-    'argparse'
+ ]
+ 
+ tests_require = [
+Index: pysaml2-2.4.0/src/pysaml2.egg-info/requires.txt
+===================================================================
+--- pysaml2-2.4.0.orig/src/pysaml2.egg-info/requires.txt	2015-03-11 09:07:52.000000000 +0000
++++ pysaml2-2.4.0/src/pysaml2.egg-info/requires.txt	2015-04-01 15:46:01.933449235 +0100
+@@ -7,7 +7,6 @@
+ pytz
+ pyOpenSSL
+ python-dateutil
+-argparse
+ 
+ [testing]
+ mongodict
+@@ -15,4 +14,4 @@
+ pymongo
+ python-memcached == 1.51
+ pytest
+-mako
+\ No newline at end of file
++mako
