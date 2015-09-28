@@ -1,2 +1,1 @@
-drop-py2.6.patch
-test.patch
+0001-run-tests.patch

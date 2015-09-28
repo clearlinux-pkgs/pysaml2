@@ -1,0 +1,25 @@
+From 37b8f960d52ca9e05651e6182386fac1d5e5bbe5 Mon Sep 17 00:00:00 2001
+From: "Simental Magana, Marcos" <marcos.simental.magana@intel.com>
+Date: Mon, 28 Sep 2015 12:08:38 -0500
+Subject: [PATCH] run tests
+
+---
+ setup.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/setup.py b/setup.py
+index 55f8331..64f1991 100755
+--- a/setup.py
++++ b/setup.py
+@@ -37,7 +37,7 @@ install_requires = [
+ tests_require = [
+     'mongodict',
+     'pyasn1',
+-    'pymongo==3.0.1',
++    'pymongo',
+     'python-memcached >= 1.51',
+     'pytest',
+     'mako',
+-- 
+2.4.3
+
