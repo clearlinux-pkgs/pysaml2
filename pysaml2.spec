@@ -4,7 +4,7 @@
 #
 Name     : pysaml2
 Version  : 3.0.0
-Release  : 18
+Release  : 19
 URL      : https://pypi.python.org/packages/source/p/pysaml2/pysaml2-3.0.0.tar.gz
 Source0  : https://pypi.python.org/packages/source/p/pysaml2/pysaml2-3.0.0.tar.gz
 Summary  : Python implementation of SAML Version 2
