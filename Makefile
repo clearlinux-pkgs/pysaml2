@@ -1,5 +1,5 @@
 PKG_NAME := pysaml2
-URL := https://pypi.python.org/packages/source/p/pysaml2/pysaml2-3.0.0.tar.gz
+URL := http://pypi.debian.net/pysaml2/pysaml2-4.0.5.tar.gz
 ARCHIVES :=
 
 include ../common/Makefile.common
