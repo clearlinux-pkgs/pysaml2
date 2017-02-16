@@ -1,1 +1,3 @@
-watchurl=https://pypi.python.org/packages/source/p/pysaml2/pysaml2-(2.[\d.]*).tar.gz
+# kesytone (mitaka) needs version < 4.0.3, more information in
+# https://github.com/openstack/keystone/blob/6cb101ba9c39758d78a33663e6a727273e897891/requirements.txt#L35
+watchurl=http://pypi.debian.net/pysaml2/pysaml2-(4.0.2.[\d.]*).tar.gz
