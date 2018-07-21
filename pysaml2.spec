@@ -4,7 +4,7 @@
 #
 Name     : pysaml2
 Version  : 4.0.2
-Release  : 33
+Release  : 34
 URL      : http://pypi.debian.net/pysaml2/pysaml2-4.0.2.tar.gz
 Source0  : http://pypi.debian.net/pysaml2/pysaml2-4.0.2.tar.gz
 Summary  : Python implementation of SAML Version 2
