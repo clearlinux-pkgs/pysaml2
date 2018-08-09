@@ -6,7 +6,6 @@ pytz-python
 pycrypto-python
 repoze.who-python
 zope.interface-python
-paste-python
 requests-python
 decorator-python
 six-python
@@ -30,3 +29,4 @@ MarkupSafe-python
 py-python
 xmlsec1
 xmlsec1-dev
+Paste
