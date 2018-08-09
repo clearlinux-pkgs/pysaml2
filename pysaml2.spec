@@ -6,7 +6,7 @@
 #
 Name     : pysaml2
 Version  : 4.6.0
-Release  : 36
+Release  : 37
 URL      : https://files.pythonhosted.org/packages/60/81/a9bb540fa5f852919f757b81d5441f462c169658ad925c810a2aed694b6a/pysaml2-4.6.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/60/81/a9bb540fa5f852919f757b81d5441f462c169658ad925c810a2aed694b6a/pysaml2-4.6.0.tar.gz
 Source99 : https://files.pythonhosted.org/packages/60/81/a9bb540fa5f852919f757b81d5441f462c169658ad925c810a2aed694b6a/pysaml2-4.6.0.tar.gz.asc
@@ -15,6 +15,7 @@ Group    : Development/Tools
 License  : Apache-2.0
 Requires: pysaml2-bin
 Requires: pysaml2-python3
+Requires: pysaml2-license
 Requires: pysaml2-python
 Requires: cryptography
 Requires: defusedxml
@@ -64,9 +65,18 @@ PySAML2 - SAML2 in Python
 %package bin
 Summary: bin components for the pysaml2 package.
 Group: Binaries
+Requires: pysaml2-license
 
 %description bin
 bin components for the pysaml2 package.
+
+
+%package license
+Summary: license components for the pysaml2 package.
+Group: Default
+
+%description license
+license components for the pysaml2 package.
 
 
 %package python
@@ -95,11 +105,13 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1533830420
+export SOURCE_DATE_EPOCH=1533835832
 python3 setup.py build -b py3
 
 %install
 rm -rf %{buildroot}
+mkdir -p %{buildroot}/usr/share/doc/pysaml2
+cp LICENSE %{buildroot}/usr/share/doc/pysaml2/LICENSE
 python3 -tt setup.py build -b py3 install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
@@ -114,6 +126,10 @@ echo ----[ mark ]----
 /usr/bin/mdexport.py
 /usr/bin/merge_metadata.py
 /usr/bin/parse_xsd2.py
+
+%files license
+%defattr(-,root,root,-)
+/usr/share/doc/pysaml2/LICENSE
 
 %files python
 %defattr(-,root,root,-)
