@@ -15,7 +15,6 @@ WebOb-python
 cffi-python
 cffi
 ipaddress-python
-enum34-python
 pyasn1-python
 idna-python
 pycparser-python

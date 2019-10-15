@@ -4,7 +4,7 @@
 #
 Name     : pysaml2
 Version  : 4.8.0
-Release  : 50
+Release  : 51
 URL      : https://files.pythonhosted.org/packages/33/80/8f32e72b4b44b5423e94a04f0014deff75618e72bed0f76a6930e06fff8f/pysaml2-4.8.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/33/80/8f32e72b4b44b5423e94a04f0014deff75618e72bed0f76a6930e06fff8f/pysaml2-4.8.0.tar.gz
 Summary  : Python implementation of SAML Version 2 Standard
@@ -34,7 +34,6 @@ BuildRequires : cffi-python
 BuildRequires : cryptography
 BuildRequires : decorator-python
 BuildRequires : defusedxml
-BuildRequires : enum34-python
 BuildRequires : idna-python
 BuildRequires : ipaddress-python
 BuildRequires : mongodict
@@ -64,11 +63,8 @@ BuildRequires : zope.interface
 BuildRequires : zope.interface-python
 
 %description
-*************************
 PySAML2 - SAML2 in Python
-*************************
-:Version: see VERSION_
-:Documentation: https://pysaml2.readthedocs.io/
+        *************************
 
 %package bin
 Summary: bin components for the pysaml2 package.
@@ -113,7 +109,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1562649047
+export SOURCE_DATE_EPOCH=1571160534
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -129,7 +125,7 @@ python3 setup.py build
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/pysaml2
-cp LICENSE %{buildroot}/usr/share/package-licenses/pysaml2/LICENSE
+cp %{_builddir}/pysaml2-4.8.0/LICENSE %{buildroot}/usr/share/package-licenses/pysaml2/be8f3eb13b3dfb0e413a47009022c3c5897b60e8
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
@@ -147,7 +143,7 @@ echo ----[ mark ]----
 
 %files license
 %defattr(0644,root,root,0755)
-/usr/share/package-licenses/pysaml2/LICENSE
+/usr/share/package-licenses/pysaml2/be8f3eb13b3dfb0e413a47009022c3c5897b60e8
 
 %files python
 %defattr(-,root,root,-)
