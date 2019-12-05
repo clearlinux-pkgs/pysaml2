@@ -4,7 +4,7 @@
 #
 Name     : pysaml2
 Version  : 4.9.0
-Release  : 52
+Release  : 53
 URL      : https://files.pythonhosted.org/packages/48/f7/6690a58dacb219d8e4b92fec1603e9b868a6fc1b640adab307aa553eb4a3/pysaml2-4.9.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/48/f7/6690a58dacb219d8e4b92fec1603e9b868a6fc1b640adab307aa553eb4a3/pysaml2-4.9.0.tar.gz
 Summary  : Python implementation of SAML Version 2 Standard
