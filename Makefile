@@ -1,5 +1,5 @@
 PKG_NAME := pysaml2
-URL = https://files.pythonhosted.org/packages/48/f7/6690a58dacb219d8e4b92fec1603e9b868a6fc1b640adab307aa553eb4a3/pysaml2-4.9.0.tar.gz
+URL = https://files.pythonhosted.org/packages/ad/ca/e34d35e2b79bbd2eca05a9e4386545c1762715fe77488e83d9f09e73be07/pysaml2-5.0.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
