@@ -4,7 +4,7 @@
 #
 Name     : pysaml2
 Version  : 5.0.0
-Release  : 57
+Release  : 58
 URL      : https://files.pythonhosted.org/packages/ad/ca/e34d35e2b79bbd2eca05a9e4386545c1762715fe77488e83d9f09e73be07/pysaml2-5.0.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/ad/ca/e34d35e2b79bbd2eca05a9e4386545c1762715fe77488e83d9f09e73be07/pysaml2-5.0.0.tar.gz
 Summary  : Python implementation of SAML Version 2 Standard
@@ -43,7 +43,6 @@ BuildRequires : pyOpenSSL-python
 BuildRequires : pyasn1-python
 BuildRequires : pycparser
 BuildRequires : pycparser-python
-BuildRequires : pycrypto-python
 BuildRequires : pymongo-python
 BuildRequires : pytest-python
 BuildRequires : python-dateutil
@@ -117,7 +116,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1586386774
+export SOURCE_DATE_EPOCH=1586389808
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib

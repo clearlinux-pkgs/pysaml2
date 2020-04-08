@@ -3,7 +3,6 @@
 python-dateutil-python
 pyOpenSSL-python
 pytz-python
-pycrypto-python
 repoze.who-python
 zope.interface-python
 requests-python
