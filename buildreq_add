@@ -13,7 +13,6 @@ cryptography
 WebOb-python
 cffi-python
 cffi
-ipaddress-python
 pyasn1-python
 idna-python
 pycparser-python
