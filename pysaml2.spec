@@ -4,7 +4,7 @@
 #
 Name     : pysaml2
 Version  : 5.3.0
-Release  : 62
+Release  : 63
 URL      : https://files.pythonhosted.org/packages/98/1a/fec9de2584bef50d4a71b65ef1ba759e0ea5140c595b10b7d1456b76c6a0/pysaml2-5.3.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/98/1a/fec9de2584bef50d4a71b65ef1ba759e0ea5140c595b10b7d1456b76c6a0/pysaml2-5.3.0.tar.gz
 Summary  : Python implementation of SAML Version 2 Standard
@@ -94,6 +94,14 @@ python components for the pysaml2 package.
 Summary: python3 components for the pysaml2 package.
 Group: Default
 Requires: python3-core
+Provides: pypi(pysaml2)
+Requires: pypi(cryptography)
+Requires: pypi(defusedxml)
+Requires: pypi(pyopenssl)
+Requires: pypi(python_dateutil)
+Requires: pypi(pytz)
+Requires: pypi(requests)
+Requires: pypi(six)
 
 %description python3
 python3 components for the pysaml2 package.
@@ -108,7 +116,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1593188681
+export SOURCE_DATE_EPOCH=1593191997
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
